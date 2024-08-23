@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif, 'raleway', 'raleway_f';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: var(--index) px ;
+}
+
+:root{
+    --index:calc(1vw + 1vh);
+    --accent: #6777bf;
+    --text: rgba(18, 18, 21, 0.89);
+    --whiteText: #f1f4fa;
+    --arrow-color:rgba(18, 18, 21, 0.89);
+    --warning: #da0d0d;
+}
+
+@font-face {
+    font-family: raleway;
+    src: url("../fonts/raleway-regular.woff2");
+}
+
+@font-face {
+    font-family: raleway_f;
+    src: url("../fonts/raleway-black.woff2");
+    font-weight: 900;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--text);
+}
+a:hover{
+    transform: scale(1.1);
+}
+
+a:active{
+    transform: scale(0.9);
+}
+
+h2{
+    text-align: center;
+}
+
+span{
+    font-family: Raleway;
+    color: var(--whiteText);
+    font-size: large;
+}
+
+button{
+    border: 1px 1px 1px var(--text);
+    background-color: var(--accent);
+    padding: 1em 3em;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.1);
+}
+
+button:active{
+    transform: scale(0.9);
+}

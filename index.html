@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Блок-схема</title>
+</head>
+<body>
+    <header class="Header">
+        <a href="index.html"> Блок-схемы </a>
+        <a> Цены </a>
+        <a> Врачи </a>
+    </header>
+
+    <div class="main">
+        <h2> Доброе утро/день/вечер. Меня зовут... Какой у Вас вопрос?</h2>
+        <div class="top-layer">
+            <a href="page1.html">
+                <button class="child1">
+                    <span> Общие вопросы </span>
+                </button>
+            </a>
+
+            <button class="parent" id="parent">
+                <span> Вопрос пациента </span>
+            </button>
+
+            <a href="page2.html">
+            <button class="child1">
+                <span> Лазерное вмешательство </span>
+            </button>
+            </a>
+        </div>
+
+        <div class="lower-layer">
+            <button class="child" data-url="page3.html">
+                <span> Консультация </span>
+            </button>
+            <button class="child" data-url="page4.html">
+                <span> ЛКЗ </span>
+            </button>
+            <button class="child" data-url="page5.html">
+                <span> Инъекции </span>
+            </button>
+            <button class="child" data-url="page6.html">
+                <span> Линзы</span>
+            </button>
+            <button class="child" data-url="page7.html">
+                <span> Диагностика </span>
+            </button>
+        </div>
+    </div>
+</body>
+<script src="js/for-arrow.js"></script>
+<script>
+    // Для перехода на страницы при нажатии на кнопки
+    const childButtons = document.querySelectorAll('.child');
+
+    childButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const url = button.getAttribute('data-url');
+            if (url) {
+                window.location.href = url;
+            }
+        });
+    });
+</script>
+</html>

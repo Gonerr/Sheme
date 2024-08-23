@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/page3.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Консультация</title>
+</head>
+<body>
+    <header class="Header">
+        <a href="index.html"> Блок-схемы </a>
+        <a> Цены </a>
+        <a> Врачи </a>
+    </header>
+
+    <div class="main">
+        <div class="relative-layer">
+            <button class="parent" id="parent">
+                <span> Пациент знает диагноз? </span>
+            </button>
+
+            <i class="answer" id="yes"> Да</i>
+            <a href="example.html">
+                <button class="child1" id="child1">
+                    <span> Запись на комплекс при заболевании </span>
+                </button>
+            </a>
+
+            <i class="answer" id="no"> Нет</i>
+
+            <a href="example.html">
+                <button class="child" id="child2">
+                    <span> Запись на расширенную консультацию </span>
+                </button>
+            </a>
+
+            <a href="example.html">
+                <button class="child-parent" id="child3">
+                    <span> Детская консультация </span>
+                </button>
+            </a>
+
+            <div class="help">
+                   <i style="color: var(--accent);"> Для справки:</i>
+                <br><br> Уточните, пожалуйста, с каким вопросом обращаетесь в нашу клинику?
+                <br><br> Уточните, пожалуйста, какой-то определенный диагноз уже выставлен при прохождении обследования ранее?
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/for-arrow.js"></script>
+</html>
