@@ -63,7 +63,7 @@
 /* Для стрелок! */
 .arrow {
     position: absolute;
-    height: 1px; /* Более тонкая линия */
+    height: 1px;
     background-color: var(--arrow-color);
     z-index: 0;
     transform-origin: left center; /* Поворот вокруг левого центра */
